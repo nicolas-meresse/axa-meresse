@@ -109,18 +109,23 @@ if(!empty($_POST)){
     	<br /> 
         	<form id="formcontact" method="post" action="contact.php"> 
         		
-            	<div class="champform gauche"><input type="text" placeholder="Nom" id="champNom" name="nom" size="40" value="<?php if(isset ($_POST["nom"])) echo $_POST["nom"]; ?>" /></div>
-                <div class="erreur"><?php echo $erreurnom;?></div> 
-                
-                <div class="champform droite"><input type="text" placeholder="Prénom" id="champPrenom" name="prenom" size="40" value="<?php if(isset ($_POST["prenom"])) echo $_POST["prenom"]; ?>"/></div>
-                <div class="erreur"><?php echo $erreurprenom; ?></div> 
-                
-                <div class="champform"><input type="text" placeholder="Email" id="champEmail" name="email" size="40" value="<?php if(isset ($_POST["email"])) echo $_POST["email"]; ?>"/></div>
-                <div class="erreur"><?php echo $erreuremail; ?></div> 
-                
-                <div class="champform bottom">
-                	<textarea rows="8" placeholder="Votre question" id="message" name="message" cols="47"><?php if(isset ($_POST["message"])) echo $_POST["message"]; ?></textarea></div>
-                <div class="erreur"><?php echo $erreurmessage; ?></div>
+        		<div class="champ gauche">
+	            	<div class="champform"><input type="text" placeholder="Nom" id="champNom" name="nom" size="40" value="<?php if(isset ($_POST["nom"])) echo $_POST["nom"]; ?>" /></div>
+	                <div class="erreur"><?php echo $erreurnom;?></div> 
+                </div>
+                <div class="champ droite">
+	                <div class="champform"><input type="text" placeholder="Prénom" id="champPrenom" name="prenom" size="40" value="<?php if(isset ($_POST["prenom"])) echo $_POST["prenom"]; ?>"/></div>
+	                <div class="erreur"><?php echo $erreurprenom; ?></div> 
+                </div>
+                <div class="champ">
+	                <div class="champform"><input type="text" placeholder="Email" id="champEmail" name="email" size="40" value="<?php if(isset ($_POST["email"])) echo $_POST["email"]; ?>"/></div>
+	                <div class="erreur"><?php echo $erreuremail; ?></div> 
+	            </div>
+                <div class="champ ">
+	                <div class="champform bottom">
+	                	<textarea rows="8" placeholder="Votre question" id="message" name="message" cols="47"><?php if(isset ($_POST["message"])) echo $_POST["message"]; ?></textarea></div>
+	                <div class="erreur"><?php echo $erreurmessage; ?></div>
+	            </div>
                 <div id="champform"><input type="submit" value="Envoyer" id="boutonenvoi"/></div> 
             </form> 
     </div>

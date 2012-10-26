@@ -100,7 +100,6 @@ section.infos_home{
 section#slider_news{
 	height:320px;
 	width:958px;
-	border:1px solid #c8c8c8;
 	background:url(../images/slider_news.jpg) no-repeat;
 }
 
@@ -282,7 +281,9 @@ form#form_contact input{
 	margin-top: 15px;
 }
 
-
+.champ{
+	margin-bottom:20px;
+}
 .champform{
 	width:330px;
 	height:30px;
@@ -291,17 +292,17 @@ form#form_contact input{
 	border-radius: 10px;
 	border: 1px solid #C8C8C8;
 	padding:10px;
-	margin-bottom:20px;
+
 }
 .champform.bottom{
 	width:700px;
 	height:200px;
 }
-.champform.gauche{
+.champ.gauche{
 	float:left;
 	margin-right:30px;
 }
-.champform.droite{
+.champ.droite{
 	margin-left:370px;
 }
 .champform input{
@@ -320,6 +321,12 @@ form#form_contact input{
 	resize:none;
 }
 
+.erreur{
+	font-size:14px;
+	color:#F5151E;
+	padding-top:10px;
+	padding-left:10px;
+}
 /*---------------------------------------------------------------------------------------------*/
 
 /* -------------------------------------FOOTER-------------------------------------*/

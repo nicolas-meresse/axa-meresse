@@ -6,8 +6,25 @@
 	<meta name="description" content="">
 	<link type="text/css" rel="stylesheet" href="Reset.css" media="screen" />
 	<link type="text/css" rel="stylesheet" href="style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="slider.css" media="screen, projection" />
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="js/map.js"></script>
+	<script src="js/jquery-1.4.min.js"></script>
+	<script type="text/javascript" src="js/external/jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="js/external/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/sliderkit/jquery.sliderkit.1.9.2.pack.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+			$(".newslider-vertical").sliderkit({
+				shownavitems:4,
+				verticalnav:true,
+				navitemshover:false,
+				circular:true
+			});
+		});	
+	</script>
+	
+		
 </head>
 <body onload="initialize();">
 	<header>
@@ -28,7 +45,53 @@
 	</header>
 	<div id="page">
 	    <section id="slider_news">
-	    </section>
+			<div class="sliderkit newslider-vertical">
+				<div class="sliderkit-nav">
+					<div class="sliderkit-nav-clip">
+						<ul>
+							<li><a href="#" >Lorem ipsum dolor</a></li>
+							<li><a href="#" title="[link title]">Lorem ipsum dolor est</a></li>
+							<li><a href="#" title="[link title]">Lorem ipsum</a></li>
+							<li><a href="#" title="[link title]" class="last">Lorem ipsum si</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="sliderkit-panels">
+					<div class="sliderkit-panel">
+						<div class="sliderkit-news">
+							<a href="#" title="[Titre de l'article]"><img src="../images/photos/small/sample-03.jpg" alt="[alternative text]" /></a>
+							<h3><a href="#">Lorem ipsum dolor</a></h3>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took...</p>
+						</div>
+					</div>
+					
+					<div class="sliderkit-panel">
+						<div class="sliderkit-news">
+							<a href="#" title="[Titre de l'article]"><img src="../images/photos/small/sample-07.jpg" alt="[alternative text]" /></a>
+							<h3><a href="#">Lorem ipsum dolor est</a></h3>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+						</div>
+					</div>
+					
+					<div class="sliderkit-panel">
+						<div class="sliderkit-news">
+							<a href="#" title="[Titre de l'article]"><img src="../images/photos/small/sample-01.jpg" alt="[alternative text]" /></a>
+							<h3><a href="#">Lorem ipsum</a></h3>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took...</p>
+						</div>
+					</div>
+					
+					<div class="sliderkit-panel">
+						<div class="sliderkit-news">
+							<a href="#" title="[Titre de l'article]"><img src="../images/photos/small/sample-01.jpg" alt="[alternative text]" /></a>
+							<h3><a href="#">Lorem ipsum si</a></h3>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	    <section id="infos" class="infos_home" itemscope itemtype="http://schema.org/InsuranceAgency">
 	          <div id="horraires" class="infos_div">
 	            <h2>Horraires d'ouverture</h2>
